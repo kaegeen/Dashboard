@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex">
+
+  <!-- Sidebar -->
+  <aside class="w-64 bg-white shadow-lg p-6">
+    <h2 class="text-2xl font-bold mb-8">Dashboard</h2>
+    <nav class="flex flex-col gap-4">
+      <a href="#" class="hover:underline">Home</a>
+      <a href="#" class="hover:underline">Analytics</a>
+      <a href="#" class="hover:underline">Settings</a>
+      <a href="#" class="hover:underline">Logout</a>
+    </nav>
+  </aside>
+
+  <!-- Main Content -->
+  <div class="flex-1 flex flex-col">
+    <!-- Header -->
+    <header class="bg-white shadow p-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold">Welcome Back</h1>
+      <button class="border px-4 py-2">Profile</button>
+    </header>
+
+    <!-- Content -->
+    <main class="p-6 flex-1">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-white p-4 rounded shadow">
+          <h3 class="text-lg font-semibold mb-2">Visitors</h3>
+          <p>1,234 today</p>
+        </div>
+        <div class="bg-white p-4 rounded shadow">
+          <h3 class="text-lg font-semibold mb-2">Sales</h3>
+          <p>$4,567 earned</p>
+        </div>
+        <div class="bg-white p-4 rounded shadow">
+          <h3 class="text-lg font-semibold mb-2">New Signups</h3>
+          <p>89 this week</p>
+        </div>
+      </div>
+    </main>
+  </div>
+
+</body>
+</html>
